@@ -1,0 +1,14 @@
+sudo apt-cache search openjdk
+to change jenkins java -- > 
+update-alternatives --list java
+sudo update-alternatives --config java
+whereis java
+ls -l /usr/bin/java
+sudo apt list --installed | grep -i openjdk
+sudo apt-get remove "java version"
+sudo apt-get update && sudo apt-get install openjdk-17-jdk
+java -jar my-app-1.0-SNAPSHOT.jar
+
+mvn compile -Denforcer.skip=true
+
+git config remote.origin.url git+ssh://git@github.com/gudidha/ShalAlg.git
